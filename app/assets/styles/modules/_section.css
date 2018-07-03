@@ -1,0 +1,23 @@
+.section {
+    padding-top:80px;
+	padding-bottom:80px;
+	
+	&--no-padding {
+		padding:0px!important;
+	}
+	
+	&--small {
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+
+	&--gray {
+		background-color: #f1f1f2;
+	}
+	
+	&--centered {
+		text-align: center;
+	}
+
+}
+

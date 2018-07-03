@@ -1,0 +1,18 @@
+body {
+    font-size:16px;
+    color:#000;
+    font-family: $primaryFont;
+}
+
+a,
+button {
+    transition:all 0.2s ease;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+img {
+    max-width:100%;
+}
