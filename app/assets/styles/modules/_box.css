@@ -1,0 +1,58 @@
+.box {
+    position: relative;
+    padding:20px;
+    margin-bottom:30px;
+    border-radius:7px;
+    background-color:#fff;
+
+    @mixin atMedium {
+        padding:30px;
+    }
+
+    &__icon {
+        font-size:3em;
+    }
+
+    &__headline {
+        margin:20px 0;
+        font-size:1.5em;
+    }
+
+    &__text {
+        margin-top:0px;
+        font-size:0.875em;
+        color:#777;
+    }
+
+    &--bordered {
+        border:1px solid #ccc;
+    }
+
+    &--shadow {
+        box-shadow:0 10px 30px rgba(0,0,0,0.13);
+    }
+
+    &--minimal {
+        margin-top:40px;
+        padding-top:40px;
+        text-align:center;
+        box-shadow:0 10px 25px 0 rgba(0,0,0,0.08);
+    }
+
+    &--minimal &__icon {
+        position: absolute;
+        top:-45px;
+        left:50%;
+        transform:translateX(-50%);
+        width:90px;
+        height:90px;
+        background-color:#000;
+        border-radius:50%;
+        font-size:2em;
+        color:#fff;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+}

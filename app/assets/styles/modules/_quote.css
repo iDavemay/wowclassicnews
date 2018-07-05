@@ -1,0 +1,53 @@
+.quote {
+    position: relative;
+    background-color:#f9f9f9;
+    box-shadow:0 10px 25px 0 rgba(0,0,0,0.08);
+    margin-left:25px;
+    padding:30px 30px 30px 60px;
+    margin-bottom:30px;
+
+    &:before {
+        position: absolute;
+        top:30px;
+        left:-25px;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 40px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+        content: "\f10d";
+    }
+
+    :first-child {
+        margin-top:0;
+    }
+
+    &__meta-name,
+    &__meta-detail {
+        display:inline-block;
+    }
+
+    &__meta-name:before {
+        content:"\2014";
+        font-weight:700;
+        margin-right:5px;
+    }
+
+    &__meta-detail {
+        color:#777;
+    }
+
+    &__meta-detail:before {
+        content:"\2022";
+        margin:0 8px 0 5px;
+    }
+
+    > p {
+        font-family:'Georgia', 'Times New Roman', Times, serif;
+        font-size:1.2em;
+        font-style:italic;
+    }
+
+}

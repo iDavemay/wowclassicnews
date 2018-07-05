@@ -15,12 +15,15 @@ h4,
 h5,
 h6 {
     color:#000;
+    font-weight:800;
     font-family: $primaryFont;
 }
 
 h1,
 .h1 {
     font-size:48px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 h2,
@@ -58,4 +61,14 @@ p {
 
 .alpha {
     margin-top:0;
+}
+
+.subheadline {
+    margin-top:-20px;
+}
+
+.type-right--medium {
+    @mixin atMedium {
+        text-align:right;
+    }
 }

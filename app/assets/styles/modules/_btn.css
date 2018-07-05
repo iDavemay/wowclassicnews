@@ -2,7 +2,8 @@
     min-width:225px;
     padding:14px 20px;
     border-radius:3px;
-    border:0;
+	border:0;
+	display: inline-block;
     color:#fff;
     font-size:1em;
     font-weight:700;
@@ -55,7 +56,7 @@
 		background-color:transparent;
 		color:#fff;
 	
-		&--outline-secondary:hover {
+		&:hover {
 			background-color:#fff;
 			color:#000;
 		}
