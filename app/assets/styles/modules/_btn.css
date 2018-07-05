@@ -76,6 +76,10 @@
 		font-size:0.875em;
 	}
 
+	&--no-min-width {
+		min-width:auto;
+	}
+
 	&--icon-left {
 		& > .fa {
 			margin-right:10px;

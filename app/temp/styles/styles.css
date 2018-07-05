@@ -3561,6 +3561,10 @@ img {
 		font-size:0.875em;
 	}
 
+.btn--no-min-width {
+		min-width:auto;
+	}
+
 .btn--icon-left > .fa {
 			margin-right:10px;
 		}
@@ -3916,23 +3920,25 @@ p {
 
 .box {
     position: relative;
-    padding:20px;
     margin-bottom:30px;
     border-radius:7px;
     background-color:#fff;
 
 }
 
-@media (min-width:768px) {
-
-.box {
-        padding:30px
-
-}
-    }
-
 .box__icon {
         font-size:3em;
+    }
+
+.box__content {
+        padding:20px;
+    }
+
+@media (min-width:768px) {
+
+.box__content {
+            padding:30px
+    }
     }
 
 .box__headline {
@@ -3944,6 +3950,10 @@ p {
         margin-top:0px;
         font-size:0.875em;
         color:#777;
+    }
+
+.box--with-image {
+        padding-top:0;
     }
 
 .box--bordered {
@@ -4027,5 +4037,99 @@ p {
 
 .bottom-box__btn {
             margin-top:0
+    }
+    }
+
+.nav {
+    margin-bottom:0;
+}
+
+@media (min-width:768px) {
+
+.nav {
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex
+}
+    }
+
+.nav__item {
+        display: inline-block;
+        margin-bottom:0;
+    }
+
+.nav__link {
+        position: relative;
+        padding:10px 0px;
+        margin:0 10px;
+        text-transform: uppercase;
+        font-weight:700;
+        font-size:0.925em;
+        color:#ff0000;
+
+    }
+
+.nav__link::after {
+            content:"";
+            position: absolute;
+            bottom:0;
+            left:0;
+            -webkit-transform:translateY(3px);
+                    transform:translateY(3px);
+            width:100%;
+            height:3px;
+            display:block;
+            opacity:0.0;
+            background-color:#000000;
+            -webkit-transition:all 0.35s ease;
+            transition:all 0.35s ease;
+        }
+
+.nav__link:hover::after {
+            opacity:1.0;
+            -webkit-transform:translateY(0);
+                    transform:translateY(0);
+        }
+
+.navbar {
+    background-color:#fff;
+    padding:10px;
+    border-bottom:2px solid #000;
+
+}
+
+@media (min-width:768px) {
+
+.navbar {
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        padding:15px;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        -webkit-box-pack:justify;
+            -ms-flex-pack:justify;
+                justify-content:space-between
+
+}
+    }
+
+.navbar__nav {
+        display:none;
+    }
+
+@media (min-width:768px) {
+
+.navbar__nav {
+            display:inline-block;
+            justify-self:center
+    }
+    }
+
+@media (min-width:768px) {
+
+.navbar__toggle {
+            display:none
     }
     }

@@ -1,16 +1,19 @@
 .box {
     position: relative;
-    padding:20px;
     margin-bottom:30px;
     border-radius:7px;
     background-color:#fff;
 
-    @mixin atMedium {
-        padding:30px;
-    }
 
     &__icon {
         font-size:3em;
+    }
+
+    &__content {
+        padding:20px;
+        @mixin atMedium {
+            padding:30px;
+        }
     }
 
     &__headline {
@@ -22,6 +25,10 @@
         margin-top:0px;
         font-size:0.875em;
         color:#777;
+    }
+
+    &--with-image {
+        padding-top:0;
     }
 
     &--bordered {

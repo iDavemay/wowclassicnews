@@ -1,0 +1,29 @@
+.navbar {
+    background-color:#fff;
+    padding:10px;
+    border-bottom:2px solid #000;
+
+    @mixin atMedium {
+        display:flex;
+        padding:15px;
+        align-items:center;
+        justify-content:space-between;
+    }
+
+
+    &__nav {
+        display:none;
+
+        @mixin atMedium {
+            display:inline-block;
+            justify-self:center;
+        }
+    }
+
+    &__toggle {
+        @mixin atMedium {
+            display:none;
+        }
+    }
+
+}

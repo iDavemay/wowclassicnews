@@ -41,14 +41,23 @@
 	<!-- COMMENT
 	================================================== -->
 	<div class="navbar">
-		<a class="navbar__logo">Company name</h5>
-		<nav class="nav main-nav">
-			<li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-			<li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-			<li class="nav__item"><a href="#" class="nav__link">About</a></li>
-			<li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+		<div class="navbar__left">
+			<a class="navbar__logo">Company name</a>
+		</div>
+		<button class="navbar__toggle">
+			&times;
+		</button>
+		<nav class="navbar__nav">
+			<ul class="nav main-nav">
+				<li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">About</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+			</ul>
 		</nav>
-		<a class="btn btn--primary" href="#">Contact Us</a>
+		<div class="navbar__right">
+			<a class="btn btn--primary btn--small btn--no-min-width" href="#">Contact Us</a>
+		</div>
 	</div><!--/comment -->
 	
 	<div class="banner">
@@ -62,69 +71,82 @@
 	
 	<section class="section">
 	    <div class="container--fluid">
-	        <h2 class="alpha">Development Template</h2>
-	        <p class="lead subheadline">Use this document as a way to quickly start any new project.</p>
-	         
-	        <ul class="list list--squares">
-				<li>Nav
-					<ul>
-						<li>Push</li>
-						<li>Hamburger</li>
-						<li>Mobile w/ phone</li>
-					</ul>
-				</li>
-				<li>Lists
-					<ul>
-						<li>Normal</li>
-						<li>Squares</li>
-						<li>Checkmark</li>
-						<li>Address</li>
-						<li>Social</li>
-					</ul>
-				</li>
-	        	<li>Sections
-					<ul>
-						<li>Regular</li>
-						<li>Dark</li>
-						<li>Small</li>
-						<li>Large</li>
-						<li>Gradient</li>
-						<li>Background image</li>
-					</ul>
-				</li>
-				<li>Two column</li>
-				<li>Testimonial</li>
-				<li>Modal</li>
-				<li>Box
-					<ul>
-						<li>Regular</li>
-						<li>Bordered</li>
-						<li>Shadowed</li>
-						<li>Icon</li>
-					</ul>
-				</li>
-				<li>Tile Gallery</li>
-				<li>Image Gallery</li>
-				<li>Small Service</li>
-				<li>Typography
-					<ul>
-						<li>Shadow text</li>
-					</ul>
-				</li>
-				<li>Figure</li>
-				<li>Map</li>
-				<li>Footer</li>
-	        </ul>
-			 
 			<div class="type-center">
-				<h2 class="h2">Buttons</h2>
-				<a href="#" class="btn btn--primary">Primary Button</a>
-				<a href="#" class="btn btn--secondary">Secondary Button</a>
-				<a href="#" class="btn btn--outline-primary">Outline Primary Button</a>
-				<a href="#" class="btn btn--outline-secondary">Outline Secondary Button</a>
-				<a href="#" class="btn btn--primary btn--large">Large Button</a>
-				<a href="#" class="btn btn--secondary btn--small">Small Button</a>
+				<h2 class="alpha">Development Template</h2>
+				<p class="lead subheadline">Use this document as a way to quickly start any new project.</p>
 			</div>
+			
+			<div class="grid">
+				<div class="grid__column grid__column--12 grid__column--7--md">
+					<ul class="list list--squares">
+						<li>Nav
+							<ul>
+								<li>Push</li>
+								<li>Hamburger</li>
+								<li>Mobile w/ phone</li>
+							</ul>
+						</li>
+						<li>Lists
+							<ul>
+								<li>Normal</li>
+								<li>Squares</li>
+								<li>Checkmark</li>
+								<li>Address</li>
+								<li>Social</li>
+							</ul>
+						</li>
+						<li>Sections
+							<ul>
+								<li>Regular</li>
+								<li>Dark</li>
+								<li>Small</li>
+								<li>Large</li>
+								<li>Gradient</li>
+								<li>Background image</li>
+							</ul>
+						</li>
+						<li>Two column</li>
+						<li>Testimonial</li>
+						<li>Modal</li>
+						<li>Box
+							<ul>
+								<li>Regular</li>
+								<li>Bordered</li>
+								<li>Shadowed</li>
+								<li>Icon</li>
+							</ul>
+						</li>
+						<li>Tile Gallery</li>
+						<li>Image Gallery</li>
+						<li>Small Service</li>
+						<li>Typography
+							<ul>
+								<li>Shadow text</li>
+							</ul>
+						</li>
+						<li>Figure</li>
+						<li>Map</li>
+						<li>Footer</li>
+					</ul>
+						
+					<div class="type-center">
+						<h2 class="h2">Buttons</h2>
+						<a href="#" class="btn btn--primary">Primary Button</a>
+						<a href="#" class="btn btn--secondary">Secondary Button</a>
+						<a href="#" class="btn btn--outline-primary">Outline Primary Button</a>
+						<a href="#" class="btn btn--outline-secondary">Outline Secondary Button</a>
+						<a href="#" class="btn btn--primary btn--large">Large Button</a>
+						<a href="#" class="btn btn--secondary btn--small">Small Button</a>
+					</div>
+				</div>
+				<div class="grid__column grid__column--12 grid__column--5--md">
+					<figure class="figure figure--shadow">
+						<img src="/assets/images/placeholder.jpg" alt="">
+						<figcaption>This is an example of an image caption</figcaption>
+					</figure>
+				</div>
+			</div>
+	        
 	
 	    </div>
 	</section>
@@ -182,7 +204,7 @@
 	<!-- https://dribbble.com/shots/3151181-Smith-Blog-post/attachments/668384 -->
 	<div class="section">
 			<div class="container--fluid">
-				<h2 class="type-center">Testimonials</h2>
+				<h2 class="type-center alpha">Testimonials</h2>
 				<div class="grid">
 					<div class="grid__column grid__column--12 grid__column--6--md">
 						<div class="quote">
@@ -208,34 +230,53 @@
 
 	<div class="section section--gray">
 		<div class="container--fluid">
-			<h2 class="type-center">Boxes</h2>
+			<h2 class="type-center alpha">Boxes</h2>
 			<div class="grid">
 				<div class="grid__column grid__column--12 grid__column--6--sm grid__column--3--lg">
 					<div class="box">
-						<i class="box__icon fa fa-envelope"></i>	
-						<h3 class="box__headline">Regular Box</h3>
-						<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						<div class="box__content">
+							<i class="box__icon fa fa-envelope"></i>	
+							<h3 class="box__headline">Regular Box</h3>
+							<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						</div>
 					</div>
 				</div>
 				<div class="grid__column grid__column--12 grid__column--6--sm grid__column--3--lg">
 					<div class="box box--shadow">
-						<i class="box__icon fa fa-envelope"></i>	
-						<h3 class="box__headline">Regular Box</h3>
-						<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						<div class="box__content">
+							<i class="box__icon fa fa-envelope"></i>	
+							<h3 class="box__headline">Shadow Box</h3>
+							<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						</div>
 					</div>
 				</div>
 				<div class="grid__column grid__column--12 grid__column--6--sm grid__column--3--lg">
 					<div class="box box--bordered">
-						<i class="box__icon fa fa-envelope"></i>	
-						<h3 class="box__headline">Regular Box</h3>
-						<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						<div class="box__content">
+							<i class="box__icon fa fa-envelope"></i>	
+							<h3 class="box__headline">Bordered Box</h3>
+							<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						</div>
 					</div>
 				</div>
 				<div class="grid__column grid__column--12 grid__column--6--sm grid__column--3--lg">
 					<div class="box box--minimal">
-						<i class="box__icon fa fa-envelope"></i>	
-						<h3 class="box__headline">Regular Box</h3>
-						<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						<div class="box__content">
+							<i class="box__icon fa fa-envelope"></i>	
+							<h3 class="box__headline">Fancy Icon Box</h3>
+							<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						</div>
+					</div>
+				</div>
+				<div class="grid__column grid__column--12 grid__column--6--sm grid__column--3--lg">
+					<div class="box box--with-image">
+						<div class="box__image">
+							<img src="/assets/images/placeholder.jpg" alt="">
+						</div>
+						<div class="box__content">
+							<h3 class="box__headline">Image Box</h3>
+							<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						</div>
 					</div>
 				</div>
 			</div>
