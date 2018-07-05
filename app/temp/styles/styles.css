@@ -4139,3 +4139,51 @@ p {
             display:none
     }
     }
+
+.figure {
+    position: relative;
+}
+
+.figure > img {
+        border-radius:6px;
+        -webkit-box-shadow:0 5px 15px rgba(0,0,0,0.06);
+                box-shadow:0 5px 15px rgba(0,0,0,0.06);
+    }
+
+.figure > figcaption {
+        position: relative;
+        z-index:2;
+        -webkit-transform:
+            translateY(-25px)
+            translateX(10px);
+                transform:
+            translateY(-25px)
+            translateX(10px);
+        background-color:#fff;
+        -webkit-box-shadow:0 10px 25px 0 rgba(0,0,0,0.12);
+                box-shadow:0 10px 25px 0 rgba(0,0,0,0.12);
+        padding:10px 15px;
+        max-width:90%;
+        float:right;
+        font-size:0.875em;
+        font-style:italic;
+        color:#888;
+    }
+
+.margin-top {
+    margin-top:50px;
+}
+
+@media (min-width:576px) {
+
+.margin-top--small {
+            margin-top:0
+    }
+    }
+
+@media (min-width:768px) {
+
+.margin-top--medium {
+            margin-top:0
+    }
+    }
