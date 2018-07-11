@@ -44,9 +44,18 @@
 		<div class="navbar__left">
 			<a class="navbar__logo">Company name</a>
 		</div>
-		<button class="navbar__toggle">
-			&times;
-		</button>
+		<div class="navbar__mobile-buttons">
+			<button class="navbar__phone-icon">
+				<i class="fa fa-phone"></i>
+			</button>
+			<button class="navbar__toggle navicon">
+				<div class="navicon__holder">
+					<div class="navicon__line"></div>
+					<div class="navicon__line"></div>
+					<div class="navicon__line"></div>
+				</div>
+			</button>
+		</div>
 		<nav class="navbar__nav">
 			<ul class="nav main-nav">
 				<li class="nav__item"><a href="#" class="nav__link">Services</a></li>
@@ -56,7 +65,7 @@
 			</ul>
 		</nav>
 		<div class="navbar__right">
-			<a class="btn btn--primary btn--small btn--no-min-width" href="#">Contact Us</a>
+			<a class="btn btn--primary btn--small btn--icon-left btn--no-min-width" href="#"><i class="fa fa-phone"></i>(610) 337-8484</a>
 		</div>
 	</div><!--/comment -->
 	
@@ -81,19 +90,11 @@
 					<h2 class="">Development Template</h2>
 	
 					<p class="lead">Use this document as a way to quickly start any new project.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt purus non neque cursus imperdiet. Nunc a orci felis. Vivamus dapibus, magna quis tempus faucibus, nunc justo tincidunt libero, a auctor erat massa vitae massa. Vestibulum accumsan mi vitae venenatis placerat. Curabitur condimentum condimentum tellus, ut dapibus erat semper sed. Integer accumsan metus et orci pellentesque, ac auctor metus pellentesque. Aliquam a sem eu felis imperdiet elementum. Vestibulum ante dolor, porta eget sodales non, venenatis quis elit.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#" class="text-link">Integer tincidunt purus</a> non neque cursus imperdiet. Nunc a orci felis. Vivamus dapibus, magna quis tempus faucibus, nunc justo tincidunt libero, a auctor erat massa vitae massa. Vestibulum accumsan mi vitae venenatis placerat. Curabitur condimentum condimentum tellus, ut dapibus erat semper sed. Integer accumsan metus et orci pellentesque, ac auctor metus pellentesque. Aliquam a sem eu felis imperdiet elementum. Vestibulum ante dolor, porta eget sodales non, venenatis quis elit.</p>
 					<p>Cras et nisl dui. Aliquam eros justo, eleifend eu nibh vel, tincidunt iaculis felis. Nam ut ligula lectus. Vivamus id ex quis enim aliquet tincidunt vitae sit amet purus. Donec interdum quam luctus urna scelerisque, at euismod dui sodales. Pellentesque rhoncus maximus diam, sit amet suscipit velit posuere vel. Nunc laoreet porttitor nunc.</p>
 
-					<a href="#" class="btn btn--primary">Learn More</a>
-					
-					<h2 class="h2">Buttons</h2>
-					<a href="#" class="btn btn--primary">Primary Button</a>
-					<a href="#" class="btn btn--secondary">Secondary Button</a>
-					<a href="#" class="btn btn--outline-primary">Outline Primary Button</a>
-					<a href="#" class="btn btn--outline-secondary">Outline Secondary Button</a>
-					<a href="#" class="btn btn--primary btn--large">Large Button</a>
-					<a href="#" class="btn btn--secondary btn--small">Small Button</a>
-
+					<a href="#" class="btn btn--secondary">Learn More</a>
+				
 				</div>
 				<div class="grid__column grid__column--12 grid__column--5--md margin-top margin-top--medium">
 					<figure class="figure figure--shadow">
@@ -107,13 +108,10 @@
 	    </div>
 	</section>
 
-	<div class="section section--gradient-primary section--centered">
+	<div class="section section--gradient-primary section--large section--centered">
 		<div class="container--fluid">
 			<h2 class="h2 alpha">Gradient Section</h2>
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus orci, consectetur ac imperdiet et, iaculis sit amet nisi. Praesent neque lectus, vestibulum vel ex vitae, sollicitudin molestie massa.</p>
-
-			<p>Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate. In a facilisis libero, accumsan molestie arcu. In vel est in mauris pellentesque cursus at nec arcu. Sed a luctus nisl, id euismod diam. Curabitur tristique vulputate suscipit. Pellentesque in semper purus. Vestibulum nec turpis turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut quis commodo mi. Suspendisse malesuada vitae diam vitae tincidunt. Aliquam in sem euismod leo pretium aliquet. Nulla ultrices massa a nulla accumsan finibus. Phasellus pulvinar mollis felis. Etiam lacinia, nunc at efficitur egestas, tellus felis laoreet eros, et efficitur eros nisl et ligula.</p>
-
 		</div>
 	</div>
 
@@ -224,8 +222,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="grid__column grid__column--12 grid__column--6--sm grid__column--3--lg">
-					<div class="box box--with-image">
+			</div>
+			<div class="grid">
+				<div class="grid__column grid__column--12 grid__column--6--sm grid__column--4--lg">
+					<a href="#" class="box box--with-image box--link">
 						<div class="box__image">
 							<img src="/assets/images/placeholder.jpg" alt="">
 						</div>
@@ -233,7 +233,29 @@
 							<h3 class="box__headline">Image Box</h3>
 							<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
 						</div>
-					</div>
+					</a>
+				</div>
+				<div class="grid__column grid__column--12 grid__column--6--sm grid__column--4--lg">
+					<a href="#" class="box box--with-image box--link">
+						<div class="box__image">
+							<img src="/assets/images/placeholder.jpg" alt="">
+						</div>
+						<div class="box__content">
+							<h3 class="box__headline">Image Box</h3>
+							<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						</div>
+					</a>
+				</div>
+				<div class="grid__column grid__column--12 grid__column--6--sm grid__column--4--lg">
+					<a href="#" class="box box--with-image box--link">
+						<div class="box__image">
+							<img src="/assets/images/placeholder.jpg" alt="">
+						</div>
+						<div class="box__content">
+							<h3 class="box__headline">Image Box</h3>
+							<p class="box__text">Maecenas mollis massa diam, sed mollis odio blandit euismod. Aenean consequat sapien tincidunt vulputate imperdiet. Aenean dictum rutrum vulputate.</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -250,12 +272,6 @@
 			<img src="https://placeimg.com/900/1000/2" alt="" class="square-gallery__image square-gallery__col" />
 			<img src="https://placeimg.com/900/1000/3" alt="" class="square-gallery__image square-gallery__col" />
 		</div>			
-	</div>
-
-	<div class="section section--gray section--no-padding">
-		<div class="container--fluid">
-			Map Goes Here
-		</div>
 	</div>
 
 	<div class="section section--gradient-primary bottom-box">

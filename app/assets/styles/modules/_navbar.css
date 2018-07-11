@@ -1,29 +1,67 @@
 .navbar {
     background-color:#fff;
-    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
     border-bottom:2px solid #000;
 
     @mixin atMedium {
-        display:flex;
         padding:15px;
-        align-items:center;
-        justify-content:space-between;
     }
 
+    &__logo {
+        padding:10px 15px;
+        display: block;
+    }
 
-    &__nav {
+    &__right {
         display:none;
 
         @mixin atMedium {
+            display:block;
+        }
+    }
+
+    &__nav {
+        display:none;
+        padding:25px 50px;
+
+        &--is-open {
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            z-index:998;
+            background-color:#000;
+            display:block;
+        }
+
+        @mixin atMedium {
+            position: relative;
+            top:auto;
+            left:auto;
+            right:auto;
+            bottom:auto;
+            z-index:998;
+            background-color:transparent;
+            display:block;
             display:inline-block;
             justify-self:center;
         }
     }
 
-    &__toggle {
+    &__mobile-buttons {
         @mixin atMedium {
             display:none;
         }
+    }
+
+    &__phone-icon {
+        display:inline-block;
+        font-size:21px;
+        line-height:18px;
+        padding:10px 13px;
     }
 
 }

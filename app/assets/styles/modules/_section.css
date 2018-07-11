@@ -1,15 +1,36 @@
 .section {
 	position: relative;;
-    padding-top:80px;
-	padding-bottom:80px;
+    padding-top:40px;
+	padding-bottom:40px;
+
+	@mixin atMedium {
+		padding-top:75px;
+		padding-bottom:75px;
+	}
 	
 	&--no-padding {
 		padding:0px!important;
 	}
 	
 	&--small {
-		padding-top:50px;
-		padding-bottom:50px;
+		padding-top:30px;
+		padding-bottom:30px;
+		@mixin atMedium {
+			padding-top:50px;
+			padding-bottom:50px;
+		}
+	}
+
+	&--large {
+		padding-top:90px;
+		padding-bottom:90px;
+		min-height:100vh;
+		display: flex;
+		align-items:center;
+		@mixin atMedium {
+			padding-top:125px;
+			padding-bottom:125px;
+		}
 	}
 
 	&--gray {
