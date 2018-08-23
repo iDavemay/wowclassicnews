@@ -10330,9 +10330,26 @@ return jQuery;
 "use strict";
 
 
-var _MobileMenu = __webpack_require__(2);
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+__webpack_require__(2);
+
+var _MobileMenu = __webpack_require__(3);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mobileMenu = new _MobileMenu2.default();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 var _jquery = __webpack_require__(0);
 
@@ -10340,18 +10357,13 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mobileMenu = new _MobileMenu2.default();
-// new RevealOnScroll($(".feature-item"), "85%");
-// new RevealOnScroll($(".testimonial"), "60%");
-// var stickyHeader = new StickyHeader();
-// var modal = new Modal();
-
-// import RevealOnScroll from './modules/RevealOnScroll';
-// import StickyHeader from './modules/stickyHeader';
-// import Modal from './modules/Modal';
+(0, _jquery2.default)('.dropdown__toggle').click(function (e) {
+    e.preventDefault();
+    (0, _jquery2.default)(this).parent('.dropdown').toggleClass('dropdown--is-open').siblings().removeClass('dropdown--is-open');
+});
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
