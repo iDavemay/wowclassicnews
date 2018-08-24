@@ -3795,19 +3795,24 @@ p {
     }
 
 .navbar__nav {
-        display:none;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:998;
+        background-color:#000;
+        display:block;
         padding:25px 50px;
+        opacity:0.0;
+        visibility:hidden;
+        -webkit-transition:all 0.3s ease;
+        transition:all 0.3s ease;
     }
 
 .navbar__nav--is-open {
-            position: fixed;
-            top:0;
-            left:0;
-            right:0;
-            bottom:0;
-            z-index:998;
-            background-color:#000;
-            display:block;
+            opacity:1.0;
+            visibility:visible;
         }
 
 @media (min-width:768px) {
@@ -3819,6 +3824,8 @@ p {
             right:auto;
             bottom:auto;
             z-index:998;
+            opacity:1.0;
+            visibility:visible;
             background-color:transparent;
             display:block;
             display:inline-block;
