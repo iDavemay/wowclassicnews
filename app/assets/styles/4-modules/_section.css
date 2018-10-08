@@ -1,80 +1,22 @@
 .section {
-	position: relative;;
-    padding-top:40px;
-	padding-bottom:40px;
+    padding-top:30px;
+    padding-bottom:30px;
 
-	@mixin atMedium {
-		padding-top:75px;
-		padding-bottom:75px;
+    @mixin atMedium {
+        padding-top:60px;
+        padding-bottom:60px;
 	}
 	
-	&--no-padding {
-		padding:0px!important;
-	}
-	
-	&--small {
-		padding-top:30px;
-		padding-bottom:30px;
-		@mixin atMedium {
-			padding-top:50px;
-			padding-bottom:50px;
-		}
-	}
+    &--gray {
+        background-color: #f1f1f2;
+    }
 
-	&--large {
-		padding-top:90px;
-		padding-bottom:90px;
-		min-height:100vh;
-		display: flex;
-		align-items:center;
-		@mixin atMedium {
-			padding-top:125px;
-			padding-bottom:125px;
-		}
-	}
+    &--centered {
+        text-align: center;
+    }
 
-	&--gray {
-		background-color: #f1f1f2;
-	}
-
-	&--gradient-primary {
-		background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-	}
-
-	&--dark {
-		background-color:#000;
-	}
-	
-	&--centered {
-		text-align: center;
-	}
-
-	&__background {
-		position: absolute;
-		top:0;
-		left:0;
-		width:100%;
-		height:100%;
-		opacity:0.5;
-		background-size:cover;
-		background-repeat:no-repeat;
-		background-position:center center;
-	}
-
-	&--gradient-primary p,
-	&--gradient-primary h2,
-	&--gradient-primary h3,
-	&--gradient-primary h4,
-	&--gradient-primary h5,
-	&--gradient-primary h6,
-	&--dark p,
-	&--dark h2,
-	&--dark h3,
-	&--dark h4,
-	&--dark h5,
-	&--dark h6  {
-		color:#fff;
-	}
-
+    &--small {
+        padding-top:30px;
+        padding-bottom:30px;
+    }
 }
-

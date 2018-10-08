@@ -1,0 +1,16 @@
+.footer {
+    padding:30px 0;
+    text-align:center;
+
+    p {
+        font-size:0.935rem;
+    }
+
+    .fa-coffee {
+        color:#795548;
+    }
+
+    .fa-heart {
+        color:#FF4081;
+    }
+}

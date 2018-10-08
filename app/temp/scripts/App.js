@@ -60,11 +60,55 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(1);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery2.default)(document).ready(function () {
+    getPostList();
+});
+
+function getPostList(type) {
+    var list = (0, _jquery2.default)('#posts-list');
+    var url = 'https://spreadsheets.google.com/feeds/list/1LEvjslFWvDRbIXuN0G6sIkDcNZWiFraTfslSdKiNV3E/od6/public/values?alt=json';
+
+    _jquery2.default.getJSON(url, function (data) {
+        _jquery2.default.each(data.feed.entry, function (i, val) {
+            var article = val.gsx$article.$t;
+            var date = val.gsx$date.$t;
+            var author = val.gsx$author.$t;
+            var url = val.gsx$url.$t;
+
+            var postItem = "";
+            postItem += '<li>';
+            postItem += '<a href="' + url + '" class="post" target="_blank">';
+            postItem += '<h4 class="post__title">' + article + '</h4>';
+            postItem += '<span class="post__author">' + author + '</span>';
+            postItem += '<time datetime="2018-01-15" class="post__time">' + date + '</time>';
+            postItem += '</a>';
+            postItem += '</li>';
+
+            (0, _jquery2.default)('.loader').hide();
+            list.append(postItem);
+            (0, _jquery2.default)('#posts-list').fadeIn(1000);
+        });
+    });
+};
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10322,115 +10366,6 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-__webpack_require__(2);
-
-var _MobileMenu = __webpack_require__(3);
-
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var mobileMenu = new _MobileMenu2.default();
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(0, _jquery2.default)('.dropdown__toggle').click(function (e) {
-    e.preventDefault();
-    (0, _jquery2.default)(this).parent('.dropdown').toggleClass('dropdown--is-open').siblings().removeClass('dropdown--is-open');
-});
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-// class MobileMenu {
-//     constructor() {
-//         this.siteHeader = $(".site-header");
-//         this.menuIcon = $(".site-header__menu-icon");
-//         this.menuContent = $(".site-header__menu-content");
-//         this.events();
-//     }
-
-//     events() {
-//         this.menuIcon.click(this.toggleMenu.bind(this));
-//     }
-
-//     toggleMenu() {
-//         this.menuContent.toggleClass("site-header__menu-content--is-visible");
-//         this.siteHeader.toggleClass("site-header--is-expanded");
-//         this.menuIcon.toggleClass("site-header__menu-icon--close-x");
-//     }
-// }
-
-// export default MobileMenu;
-
-var MobileMenu = function () {
-    function MobileMenu() {
-        _classCallCheck(this, MobileMenu);
-
-        this.menu = (0, _jquery2.default)('.navbar');
-        this.menuNav = (0, _jquery2.default)('.navbar__nav');
-        this.menuToggleButton = (0, _jquery2.default)('.navbar__toggle');
-        this.events();
-    }
-
-    _createClass(MobileMenu, [{
-        key: 'events',
-        value: function events() {
-            this.menuToggleButton.click(this.toggleMenu.bind(this));
-        }
-    }, {
-        key: 'toggleMenu',
-        value: function toggleMenu() {
-            this.menuNav.toggleClass('navbar__nav--is-open');
-            this.menuToggleButton.toggleClass('navicon--toggle');
-        }
-    }]);
-
-    return MobileMenu;
-}();
-
-exports.default = MobileMenu;
 
 /***/ })
 /******/ ]);

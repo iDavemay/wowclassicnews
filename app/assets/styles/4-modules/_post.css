@@ -1,0 +1,49 @@
+#posts-list {
+    display: none;
+}
+.posts {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.post {
+    padding:20px 15px 20px 0;;
+    display: block;
+    border-bottom:1px solid #ccc;
+    border-radius:0 0 5px 5px;
+    transition:all 0.3s ease;
+
+    &:hover {
+        padding-left:15px;
+        padding-right:0;
+        background-color:#efefef;
+    }
+
+    &__title,
+    &__author,
+    &__time {
+        display: inline;
+        margin:0;
+        color:#000;
+        font-size:1rem;
+        line-height:1rem;
+        transition:all 0.3s ease;
+    }
+
+    &:hover &__title,
+    &:hover &__author,
+    &:hover &__time {
+        color:#007bff;
+    }
+
+    &__title:after,
+    &__author:after {
+        content:"\2022";
+        color:#333;
+        margin:0 5px;
+    }
+
+    .post__image {
+    }
+}
