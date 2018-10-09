@@ -5,7 +5,6 @@
 
 	<title>World of Warcraft Classic News</title>
 	<meta name="description" content="A collection of latest news articles relating to World of Warcraft Classic.">
-	<meta name="keywords" content="">
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -13,24 +12,34 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->   
-	<link rel="icon" href="/assets/images/favicon.ico">
-	<link rel="icon" href="/assets/images/favicon-16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/assets/images/favicon-48.png" sizes="48x48" type="image/png">
-    <link rel="icon" href="/assets/images/favicon-62.png" sizes="62x62" type="image/png">
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+	<link rel="icon" href="assets/images/favicon.png">
+	<link rel="icon" href="assets/images/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="assets/images/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/images/favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="assets/images/favicon-62.png" sizes="62x62" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
 
 	<meta property="og:url" content="https://idavemay.github.io/wowclassicnews/">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="World of Warcraft Classic News">
-	<meta property="og:image" content="https://idavemay.github.io/wowclassicnews/images/og-image.jpg">
+	<meta property="og:image" content="https://idavemay.github.io/wowclassicnews/assets/images/og-image.jpg">
 	<meta property="og:description" content="A collection of latest news articles relating to World of Warcraft Classic.">
 	<meta property="og:site_name" content="WOW Classic News">
 	<meta property="og:locale" content="en_US">
 
-	<link rel="stylesheet" href="assets/styles/styles-ab81df1f90.css"/>
+	<link rel="stylesheet" href="assets/styles/styles-0ddf60fd02.css"/>
 
 	<script src="assets/scripts/Vendor-8e55f1a6d3.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127155094-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-127155094-1');
+	</script>
 
 </head>
 <body>
@@ -41,8 +50,10 @@
 		<!-- HERO
 		================================================== -->
 		<div class="section section--centered">
+
 			<h1>WoW Classic News</h1>
 			<p class="lead subheadline no-margin-bottom">Your #1 Source for the Latest World of Warcraft Classic News</p>
+		
 		</div><!--/hero -->
 
 		<!-- NEWS FEED
@@ -54,9 +65,7 @@
 				<i class="fa fa-spinner fa-spin loader__icon"></i>
 			</div>
 
-			<ul class="posts" id="posts-list">
-
-			</ul>
+			<ul class="posts" id="posts-list"></ul>
 		
 		</section><!--/news feed-->
 
