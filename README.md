@@ -3,7 +3,7 @@ A Google Sheets driven news feed for World of Warcraft Classic. This was just a 
 ### To Do
 - [x] Get Sheets generating Data
 - [x] Loading Animation
-- [ ] Rebuild using build tools
-- [ ] SEO 
-- [ ] Favicons and touch-icons
+- [x] Rebuild using build tools
+- [x] SEO 
+- [x] Favicons and touch-icons
 - [ ] ES6
