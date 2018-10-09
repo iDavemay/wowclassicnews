@@ -35,6 +35,16 @@
 	<script src="/temp/scripts/Vendor.js"></script>
 	<!-- endbuild -->
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127155094-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-127155094-1');
+	</script>
+
 </head>
 <body>
 
@@ -44,8 +54,10 @@
 		<!-- HERO
 		================================================== -->
 		<div class="section section--centered">
+
 			<h1>WoW Classic News</h1>
 			<p class="lead subheadline no-margin-bottom">Your #1 Source for the Latest World of Warcraft Classic News</p>
+		
 		</div><!--/hero -->
 
 		<!-- NEWS FEED
@@ -57,9 +69,7 @@
 				<i class="fa fa-spinner fa-spin loader__icon"></i>
 			</div>
 
-			<ul class="posts" id="posts-list">
-
-			</ul>
+			<ul class="posts" id="posts-list"></ul>
 		
 		</section><!--/news feed-->
 
